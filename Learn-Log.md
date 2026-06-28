@@ -12,7 +12,7 @@ The Cascade is the engine that determines which CSS rules apply when multiple st
 2. **Classes (`.class`):** Medium priority. Targets groups of elements.
 3. **Tags / Elements (`div`, `p`):** Lowest priority. Targets all instances of an HTML tag.
 
-$$\text{ID (\#)} > \text{Class (.)} > \text{Tag Selectors}$$
+$$\text{ID (\#id)} > \text{Class (.)} > \text{Tag Selectors}$$
 
 ---
 
