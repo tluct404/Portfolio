@@ -170,6 +170,7 @@ input:focus::placeholder,
 textarea:hover::placeholder,
 textarea:focus::placeholder {
   color: var(--color-muted);
+  transition: color 0.8s;
 }
  
 input:focus,
