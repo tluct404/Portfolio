@@ -19,8 +19,8 @@
   --fs-sm: 0.875rem;  /*14px -> small print*/
   --fs-base: 1rem;    /*16px -> body text  */
   --fs-md: 1.25rem;   /*20px               */
-  --fs-lg: 1.5rem;    /*24px -> h3         */
-  --fs-xl: 2rem;      /*32px -> h2         */
+  --fs-lg: 1.5rem;    /*24px -> h2         */
+  --fs-xl: 2rem;      /*32px -> h2 larger  */
   --fs-2xl: 2.75rem;  /*44px -> h1         */
 
   /* Spacing scale */
@@ -56,7 +56,9 @@ body {
   margin: 0;
 }
 
-/* TYPOGRAPHY AND COLOUR */
+/* =========================
+   TYPOGRAPHY AND COLOUR
+   =========================*/
 body {
   font-family: var(--font-body);
   font-size: var(--fs-base);
@@ -68,5 +70,54 @@ body {
   max-width: var(--content-width);
   margin: 0 auto;
   padding: var(--space-6) var(--space-4);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  line-height: 1.15;
+  margin: 0 0 var(--space-4);
+}
+ 
+h1 {
+  font-size: var(--fs-2xl);
+}
+ 
+h2 {
+  font-size: var(--fs-xl);
+}
+ 
+h3 {
+  font-size: var(--fs-md);
+}
+
+p {
+  margin: 0 0 var(--space-4);
+  max-width: 65ch; /* readable line length, a lesson-2 design rule */
+}
+ 
+a {
+  color: var(--color-accent);
+  text-decoration: underline;
+}
+ 
+a:hover {
+  text-decoration: none;
+}
+ 
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: var(--radius);
+}
+
+/* =========================
+   SECTION
+   =========================*/
+section {
+  padding: var(--space-7) 0;
+  border-bottom: 1px solid var(--color-border);
 }
 
