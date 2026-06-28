@@ -52,5 +52,21 @@
 box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+}
 
+/* TYPOGRAPHY AND COLOUR */
+body {
+  font-family: var(--font-body);
+  font-size: var(--fs-base);
+  line-height: 1.6;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+ 
+  /* A centered single column using box model instead of layout*/
+  max-width: var(--content-width);
+  margin: 0 auto;
+  padding: var(--space-6) var(--space-4);
+}
 
