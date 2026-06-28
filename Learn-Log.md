@@ -14,6 +14,7 @@ The Cascade is the engine that determines which CSS rules apply when multiple st
 
 $$\text{ID (\text{#})} > \text{Class (.)} > \text{Tag Selectors}$$
 
+
 ---
 
 ## 2. The Box Model
